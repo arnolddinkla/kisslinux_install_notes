@@ -1,0 +1,3 @@
+to get keyboard and mouse working in X sesion you need to start eudev service
+ln -s /etc/sv/udevd/ /var/service
+I think I installed stuff in the wrong order - this may be created automatically 

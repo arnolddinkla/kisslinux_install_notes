@@ -62,3 +62,76 @@ echo "dhcpcd 2> /dev/null" > /etc/rc.d/dhcpcd.boot
 /etc/hosts - add
 
 127.0.0.1 "HOSTNAME" typo in video 28:41 - he put wrong name and should have put kisslinuxbox -  not kisslinuxhost
+
+
+
+
+irc logs
+
+
+knob
+hey what are you guys using to take scrots on kiss?
+08:15
+icyphox
+knob: probably `scrot` or `maim`
+08:15
+icyphox
+or perhaps even `import -window root`
+08:16
+z3bra
+I use xscreenshot + ff2png
+08:16
+z3bra
+git.2f30.org/xscreenshot/file/README.html
+08:17
+z3bra
+git.suckless.org/farbfeld/file/README.html
+08:17
+z3bra
+probably not packaged on kiss yet
+08:17
+z3bra
+still usable :)
+08:17
+knob
+having trouble building scrot - needs imagemagick etc
+08:18
+icyphox
+oh right, you have to /build/ stuff on KISS
+08:18
+z3bra
+build the above, the only dependency is Xlib for xscreenshot
+08:18
+knob
+i ll check out these other option you guys have mentioned - thanks
+08:18
+z3bra
+both build fast
+08:18
+z3bra
+and then
+08:18
+z3bra
+xscreenshot | ff2png > scrot.png
+08:18
+z3bra
+or keep it in farbeld format for supremacy :P
+08:19
+z3bra
+*farbfeld
+08:19
+knob
+thanks guys.
+08:22
+Crestwave
+I'm not on KISS, but I use ffmpeg, which probably has a good chance to already be installed there
+08:22
+knob
+@z3bra those look perfect
+08:23
+knob
+@Crest yeah i did see that in one of the repos now you mention it
+08:25
+z3bra
+;)
+

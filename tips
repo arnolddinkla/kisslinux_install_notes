@@ -24,7 +24,29 @@ KISS_PATH=$KISS_PATH:$REPOS_DIR/community/community
 export CFLAGS="-O3 -pipe -march=native"
 export CXXFLAGS="$CFLAGS"
 export MAKEFLAGS="-j2"  <---------------change the 2 to match your hardware - # of threads - i've been forgetting this possibly accounting for much longer compilation times then I remember previously
- 
+
+
+from wiki
++--------------------------------------------------------------------------+
+    | CFLAGS/CXXFLAGS                                                          |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   # NOTE: The 'O' in '-O3' is the letter O and NOT 0 (ZERO).             |
+    |   $ export CFLAGS="-O3 -pipe -march=native"                              |
+    |   $ export CXXFLAGS="$CFLAGS"                                            |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | MAKEFLAGS                                                                |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   # NOTE: 4 should be changed to match the number of threads.            |
+    |   $ export MAKEFLAGS="-j4"                                               |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+
+
+
 export KISS_SU=su    
 +++++++++++++++++++++++++++++++++++++++++++++
  

@@ -163,3 +163,12 @@ knob
 z3bra
 ;)
 
+-------------------------------------------------------------------------------
+mesa without llvm
+https://www.reddit.com/r/kisslinux/comments/k1a7v4/llvm_fails_to_build_xorg/
+
+kiss-fork mesa
+cd mesa && change your build and depends file(remove llvm)
+kiss b && kiss i
+
+

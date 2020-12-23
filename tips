@@ -1,15 +1,18 @@
+---------------------------------------------------------------------------
+
 to get keyboard and mouse working in X session you need to start eudev service
 ln -s /etc/sv/udevd/ /var/service
 I think I installed stuff in the wrong order - this may be created automatically
 
+---------------------------------------------------------------------------------
+
 xwm window manager cursor
 add 'xsetroot -cursor_name left_ptr &' to .xinitrc
 
-st terminal 
-echo "set enable-keypad on" >> ~/.inputrc
-to get delete key working - nope!!!! 
+----------------------------------------------------------------------------------
+st terminal
 
-Delete key in st. Just have a look at the 'st delete key' patch and manually patch and rebuild
+Delete key in st. Just have a look at the 'st delete key' patch, manually patch and rebuild
 
 --- config.def.h.orig	2020-11-12 20:23:48.867954750 +0100
 +++ config.def.h	2020-11-12 20:21:15.055922720 +0100
@@ -34,6 +37,9 @@ Delete key in st. Just have a look at the 'st delete key' patch and manually pat
   
   Problem solved
 
+----------------------------------------------------------------------------------------
+
+Notes on stuff from vid.
 
 https://www.youtube.com/watch?v=kZYcfT0WcCo&
 UEFI install video - @ 10mins fstab created
@@ -93,9 +99,8 @@ echo "dhcpcd 2> /dev/null" > /etc/rc.d/dhcpcd.boot
 
 
 
-
-irc logs
-
+---------------------------------------------------------------------------------------------------
+irc logs re: scrot
 
 knob
 hey what are you guys using to take scrots on kiss?
@@ -164,6 +169,7 @@ z3bra
 ;)
 
 -------------------------------------------------------------------------------
+
 mesa without llvm
 https://www.reddit.com/r/kisslinux/comments/k1a7v4/llvm_fails_to_build_xorg/
 
